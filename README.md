@@ -1,6 +1,6 @@
 # health_android
 
-A new flutter plugin project.
+This plugin allow to ask permission to read information about STEPS from Google fit
 
 ## Getting Started
 

@@ -1,7 +1,8 @@
 name: health_android
 description: Read information from google fit
 version: 0.0.1
-homepage:
+homepage: https://github.com/JNicoVM/health_android_flutter/tree/master
+repository: https://github.com/JNicoVM/health_android_flutter/tree/master
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
