@@ -1,6 +1,6 @@
 name: health_android
-description: Read information from google fit
-version: 0.0.1
+description: Ask permission to get information from google fit
+version: 0.0.2
 homepage: https://github.com/JNicoVM/health_android_flutter/tree/master
 repository: https://github.com/JNicoVM/health_android_flutter/tree/master
 

@@ -26,6 +26,7 @@ import io.flutter.plugin.common.MethodCall
 import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.PluginRegistry
 import java.lang.Error
+import java.lang.Exception
 
 /** HealthAndroidPlugin */
 class HealthAndroidPlugin: FlutterPlugin, MethodChannel.MethodCallHandler, ActivityAware {
@@ -70,10 +71,10 @@ class HealthAndroidPlugin: FlutterPlugin, MethodChannel.MethodCallHandler, Activ
 
   override fun onMethodCall(call: MethodCall, result: MethodChannel.Result) {
     if (call.method == "hasPermission") {
-      val hasPermmision = hasPermissions()
-      if (hasPermmision) {
+      try {
+        val hasPermmision = hasPermissions()
         result.success(hasPermmision)
-      } else {
+      } catch (e: Exception){
         result.error("UNAVAILABLE", " get permission is not avaliable.", null)
       }
     } else if (call.method == "getSteps") {
